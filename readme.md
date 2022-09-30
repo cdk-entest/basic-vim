@@ -193,11 +193,9 @@ and add to the coc-setting.json
 ```
 
 ## Captures 
-Netrw 
-<img width="1435" alt="Screen Shot 2022-09-30 at 16 27 41" src="https://user-images.githubusercontent.com/20411077/193239884-cb862b50-26bb-442c-b082-3e5f17b598dd.png">
+Netrw and search files 
 
-Search file
-<img width="1440" alt="Screen Shot 2022-09-30 at 16 26 11" src="https://user-images.githubusercontent.com/20411077/193240014-89de5cc7-519a-4161-a5cb-0b029bcc9540.png">
+<img width="1435" alt="Screen Shot 2022-09-30 at 16 30 42" src="https://user-images.githubusercontent.com/20411077/193240365-9c905c4a-4c5d-4d5a-a011-ed63987a6a9c.png">
 
 
 
