@@ -33,6 +33,18 @@ let g:netrw_liststyle= 3
 let g:netrw_winsize=30
 " map <C-a> : Lexplore<CR>
 map <leader>sf : Lexplore<CR>
+"map <leader>sl : <C-w>l
+
+augroup netrw_mapping
+  autocmd!
+  autocmd filetype netrw call NetrwMapping()
+augroup END
+
+function! NetrwMapping()
+  nnoremap <buffer> sl <C-w>l
+endfunction
+
+
 
 " color pmenu background 
 " set background=dark
@@ -73,11 +85,11 @@ set background=dark
 :highlight StatusLine cterm=reverse term=reverse ctermfg=59
 
 " tmux paste 
-if &term =~ "screen"
-  let &t_BE = "\e[?2004h"
-  let &t_BD = "\e[?2004l"
-  exec "set t_PS=\e[200~"
-  exec "set t_PE=\e[201~"
+if &term =~ "screen"                                                   
+  let &t_BE = "\e[?2004h"                                              
+  let &t_BD = "\e[?2004l"                                              
+  exec "set t_PS=\e[200~"                                              
+  exec "set t_PE=\e[201~"                                              
 endif
 
 " cursorline  
@@ -104,7 +116,6 @@ let g:fzf_layout = { 'window': { 'width': 1, 'height': 0.5, 'yoffset': 1}}
 " Some servers have issues with backup files, see #649.
 set nobackup
 set nowritebackup
-
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
