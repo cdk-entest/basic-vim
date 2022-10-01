@@ -168,7 +168,7 @@ let g:fzf_layout = { 'window': { 'width': 1, 'height': 0.5, 'yoffset': 1}}
 coc install language server
 
 ```bash
-:CocInstall coc-python
+:CocInstall coc-pyright
 ```
 
 configure fix on save prettier
@@ -188,16 +188,13 @@ and add to the coc-setting.json
     "javascript",
     "json",
     "python"
-  ]
+  ],
+  "python.pythonPath": "/usr/bin/python3"
 }
 ```
 
-## Captures 
-Netrw and search files 
+## Captures
+
+Netrw and search files
 
 <img width="1435" alt="Screen Shot 2022-09-30 at 16 30 42" src="https://user-images.githubusercontent.com/20411077/193240365-9c905c4a-4c5d-4d5a-a011-ed63987a6a9c.png">
-
-
-
-
-

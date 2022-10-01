@@ -1,5 +1,11 @@
 {
-  "eslint.format.enable": true,
-  "eslint.autoFixOnSave": true,
-  "eslint.enable": true
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "markdown",
+    "typescript",
+    "javascript",
+    "json",
+    "python"
+  ],
+  "python.pythonPath": "/usr/bin/python3"
 }
