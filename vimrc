@@ -33,8 +33,8 @@ let g:netrw_liststyle= 3
 let g:netrw_winsize=30
 " map <C-a> : Lexplore<CR>
 map <leader>sf : Lexplore<CR>
-"map <leader>sl : <C-w>l
 
+" remap inside netrw
 augroup netrw_mapping
   autocmd!
   autocmd filetype netrw call NetrwMapping()
@@ -43,7 +43,6 @@ augroup END
 function! NetrwMapping()
   nnoremap <buffer> sl <C-w>l
 endfunction
-
 
 
 " color pmenu background 
@@ -71,7 +70,14 @@ Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --producti
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jiangmiao/auto-pairs'
 Plug 'rakr/vim-one'
+Plug 'psf/black', {'branch':'stable'}
 call plug#end()
+
+" black format python on save 
+augroup black_on_save
+  autocmd!
+  autocmd BufWritePre *.py Black
+augroup end
 
 " theme colors 
 let g:airline_theme='one'
@@ -83,6 +89,7 @@ set background=dark
 :highlight clear CursorLineNr
 :highlight clear VertSplit
 :highlight StatusLine cterm=reverse term=reverse ctermfg=59
+:highlight Comment ctermfg=145
 
 " tmux paste 
 if &term =~ "screen"                                                   
@@ -105,17 +112,21 @@ set ttyfast
 
 " fuzzy search keymap
 map ;f : Files<CR>
+map ;r : Rg<CR>
 
 " coc vim float color 
 :highlight CocHighlightText  ctermfg='white'
+:highlight CocInfoFloat ctermbg='white' ctermfg='black'
 :highlight CocFloating ctermbg='white' ctermfg='black'
 :highlight CocMenuSel ctermbg=7
+:highlight CocUnusedHighlight ctermfg='white'
 :highlight Visual ctermbg=59
 let g:fzf_layout = { 'window': { 'width': 1, 'height': 0.5, 'yoffset': 1}}
 
 " Some servers have issues with backup files, see #649.
 set nobackup
 set nowritebackup
+
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
