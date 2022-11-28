@@ -198,3 +198,30 @@ and add to the coc-setting.json
 Netrw and search files
 
 <img width="1435" alt="Screen Shot 2022-09-30 at 16 30 42" src="https://user-images.githubusercontent.com/20411077/193240365-9c905c4a-4c5d-4d5a-a011-ed63987a6a9c.png">
+
+## Tmux and Vim Basic Commands
+
+hide and show status bar
+
+```bash
+:set -g status off
+:set -g status on
+```
+
+new session
+
+```bash
+:new-session
+```
+
+kill session
+
+```bash
+:kill-session(#session number)
+```
+
+vim show path of an openning file
+
+```bash
+1 and ctr+g
+```
