@@ -225,3 +225,38 @@ vim show path of an openning file
 ```bash
 1 and ctr+g
 ```
+
+## Basic Vim
+
+1. Insert a new line after each command.
+
+find and replace
+
+```bash
+:s/,/,\r/g
+
+```
+
+search command
+
+```bash
+/[(,)]
+```
+
+then insert a new line after each command
+
+```bash
+:s//\r&/g
+```
+
+2. yank a range of line
+
+```bash
+:1,10yank
+```
+
+3. delete a range of line
+
+```bash
+:1,10d
+```
