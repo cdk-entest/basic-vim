@@ -237,6 +237,12 @@ find and replace
 
 ```
 
+find and replace in entire file
+
+```bash
+:%s/foo/bar/g
+```
+
 search command
 
 ```bash
@@ -259,4 +265,16 @@ then insert a new line after each command
 
 ```bash
 :1,10d
+```
+
+4. delete blank lines
+
+```bash
+:g/^$s/d
+```
+
+or
+
+```bash
+:g/<pattern>/d
 ```
