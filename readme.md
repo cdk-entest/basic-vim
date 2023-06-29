@@ -8,7 +8,12 @@ date: 30/09/2022
 
 ## Introduction
 
-## Setup
+- basic vimrc without plugins 
+- setup vim plug 
+- setup vimrc 
+- setup lsp (coc-vim)
+
+## Basic Vim 
 
 basic setup
 
@@ -49,7 +54,7 @@ delays and poor user experience.
 set updatetime=300
 ```
 
-## Netrw
+## Basic Netrw
 
 setup netrw size
 
@@ -73,7 +78,7 @@ set path+=**
 set wildmenu
 ```
 
-## Map
+## Basic Map
 
 basic map
 
@@ -94,9 +99,16 @@ copy clipboard
 vnoremap <leader>y "+y
 ```
 
-## Plugins
+## Basic Plugins
 
-use vimplug
+first we need to install vim plug 
+
+```bash 
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
+use vimplug to install some plugins 
 
 ```vim
 call plug#begin()
@@ -110,7 +122,7 @@ call plug#end()
 
 ```
 
-## Theme
+## Simple Theme
 
 colorscheme and modification
 
