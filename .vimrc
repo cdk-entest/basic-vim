@@ -43,3 +43,7 @@ set wildmenu          "Shows multiple matches on one line
 " highlight syntax
 set re=0
 syntax on
+
+" colorscheme 
+colorscheme desert
+
