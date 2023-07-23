@@ -1,6 +1,6 @@
 ---
 title: Basic Vim
-description: basic setup vim
+description: basic vim setup and amazon linux setup
 author: haimtran
 publishedDate: 30/09/2022
 date: 30/09/2022
@@ -8,12 +8,12 @@ date: 30/09/2022
 
 ## Introduction
 
-- basic vimrc without plugins 
-- setup vim plug 
-- setup vimrc 
+- basic vimrc without plugins
+- setup vim plug
 - setup lsp (coc-vim)
+- amazon linux repository
 
-## Basic Vim 
+## Basic Vim
 
 basic setup
 
@@ -101,14 +101,14 @@ vnoremap <leader>y "+y
 
 ## Basic Plugins
 
-first we need to install vim plug 
+first we need to install vim plug
 
-```bash 
+```bash
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
-use vimplug to install some plugins 
+use vimplug to install some plugins
 
 ```vim
 call plug#begin()
@@ -211,7 +211,7 @@ Netrw and search files
 
 <img width="1435" alt="Screen Shot 2022-09-30 at 16 30 42" src="https://user-images.githubusercontent.com/20411077/193240365-9c905c4a-4c5d-4d5a-a011-ed63987a6a9c.png">
 
-## Tmux and Vim Basic Commands
+## Tmux
 
 hide and show status bar
 
@@ -290,3 +290,9 @@ or
 ```bash
 :g/<pattern>/d
 ```
+
+## Reference
+
+- [amazon linux 2 repository](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/add-repositories.html)
+
+- [amazon linux 2023 repository](https://docs.aws.amazon.com/linux/al2023/release-notes/all-packages-AL2023.1-2023.1.20230719.html)
