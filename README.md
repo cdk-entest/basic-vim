@@ -296,3 +296,5 @@ or
 - [amazon linux 2 repository](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/add-repositories.html)
 
 - [amazon linux 2023 repository](https://docs.aws.amazon.com/linux/al2023/release-notes/all-packages-AL2023.1-2023.1.20230719.html)
+
+- [netrw command](https://vonheikemen.github.io/devlog/tools/using-netrw-vim-builtin-file-explorer/)
