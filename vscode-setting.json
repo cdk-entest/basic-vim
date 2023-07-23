@@ -1,8 +1,6 @@
 {
-<<<<<<< HEAD
   "editor.minimap.enabled": false,
   "remote.SSH.connectTimeout": 60,
-  "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": true
   },
@@ -17,9 +15,6 @@
   "workbench.editor.enablePreview": false,
   "terminal.integrated.cursorStyle": "line",
   "editor.renderWhitespace": "all",
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.python"
-  },
   "python.autoComplete.extraPaths": [
     "/Users/haimtran/Library/Python/3.8/lib/python/site-packages/boto3/dynamodb"
   ],
@@ -31,8 +26,6 @@
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "screencastMode.onlyKeyboardShortcuts": true,
   "editor.suggest.showStatusBar": true,
-  "python.formatting.blackArgs": ["--max-line-length", "80"],
-=======
   "[typescript]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -41,7 +34,10 @@
   "python.linting.pydocstyleEnabled": true,
   "python.formatting.provider": "black",
   "python.formatting.blackPath": "~/.local/bin/black",
-  "python.formatting.blackArgs": ["--max-line-length", "80"],
+  "python.formatting.blackArgs": [
+    "--max-line-length",
+    "80"
+  ],
   "[python]": {
     "editor.tabSize": 4,
     "editor.insertSpaces": true,
@@ -49,19 +45,28 @@
     "editor.formatOnSave": true
   },
   "editor.formatOnSave": true,
->>>>>>> 04febaa91e04201750e4da5f8910c4f544fbfaaf
   "vim.insertModeKeyBindings": [
     {
-      "before": ["i", "i"],
-      "after": ["esc"]
+      "before": [
+        "i",
+        "i"
+      ],
+      "after": [
+        "esc"
+      ]
     },
     {
-      "before": ["j", "j"],
-      "after": ["esc", "A"]
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "esc",
+        "A"
+      ]
     }
   ],
   "workbench.colorCustomizations": {
-<<<<<<< HEAD
     "list.inactiveSelectionBackground": "#CCE5FF",
     "list.activeSelectionBackground": "#063970",
     "editor.lineHighlightBackground": "#CCE5FF",
@@ -71,9 +76,8 @@
   "workbench.activityBar.visible": false,
   "workbench.colorTheme": "Default Light+",
   "workbench.statusBar.visible": false,
-  "workbench.startupEditor": "none"
-=======
-    "[Default Light+]": {
+  "workbench.startupEditor": "none",
+  "[Default Light+]": {
     "list.inactiveSelectionBackground": "#CCE5FF",
     "list.activeSelectionBackground": "#063970",
     "editor.lineHighlightBackground": "#CCE5FFFF",
@@ -84,8 +88,8 @@
     "statusBar.foreground": "#000000",
     "statusBarItem.remoteBackground": "#f3f3f3",
     "statusBarItem.remoteForeground": "#000000"
-    },
-    "[Default Dark+]": {
+  },
+  "[Default Dark+]": {
     "list.inactiveSelectionBackground": "#CCE5FF",
     "list.activeSelectionBackground": "#063970",
     "editor.lineHighlightBackground": "#CCE5FF3F",
@@ -95,10 +99,8 @@
     "editorSuggestWidget.focusHighlightForeground": "#FFF",
     "statusBar.background": "#3e3e3e",
     "statusBar.foreground": "#FFFFFF",
-		"statusBarItem.remoteBackground": "#3e3e3e",
-		"statusBarItem.remoteForeground": "#ffffff",
-    }
+    "statusBarItem.remoteBackground": "#3e3e3e",
+    "statusBarItem.remoteForeground": "#ffffff"
   }
->>>>>>> 04febaa91e04201750e4da5f8910c4f544fbfaaf
 }
-
+}
