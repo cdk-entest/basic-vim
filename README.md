@@ -13,7 +13,10 @@ date: 30/09/2022
 - setup lsp (coc-vim)
 - amazon linux repository
 
-## Basic Vim
+
+![vim-setup](/assets/fzf_vim.png)
+
+## Simple .vimrc 
 
 basic setup
 
@@ -99,7 +102,7 @@ copy clipboard
 vnoremap <leader>y "+y
 ```
 
-## Basic Plugins
+## Add Plugins
 
 first we need to install vim plug
 
@@ -118,8 +121,10 @@ Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --producti
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jiangmiao/auto-pairs'
 Plug 'rakr/vim-one'
+Plug 'psf/black', {'branch':'stable'}
+Plug 'sbdchd/neoformat'
+Plug 'navarasu/onedark.nvim'
 call plug#end()
-
 ```
 
 ## Simple Theme
@@ -324,6 +329,66 @@ copy -r onedark.vim/colors/ ~/.vim/colors/
 copy -r autoload/onedark.vim ~/.vim/autoload 
 ```
 
+## Mount Volume EC2 
+
+list device
+
+```bash
+lsblk
+```
+
+look at the volume of ec2 in aws console as below picture
+
+![volume-on-ec2](/assets/volume.png)
+
+run this command to check an file system already exist on the device and parition or not
+
+```bash
+sudo file -s /dev/sdf1
+```
+
+if an file system already exist, let create a new directory
+
+```bash
+sudo mkdir /data
+```
+
+then mount
+
+```bash
+sudo mount /dev/sdf1 /data
+```
+
+configure auto mount on startup
+
+```bash
+sudo cp /etc/fstab /etc/fstab.orig
+```
+
+check the UUID
+
+```bash
+sudo blkid
+```
+
+take note the UUID
+
+```bash
+f33e7d3b-6786-4f40-875a-90f0f7e6b9a8
+```
+
+update the /etc/fstab file by appending this line to the end
+
+```bash
+UUID=aebf131c-6957-451e-8d34-ec978d9581ae  /data  xfs  defaults,nofail  0  2
+```
+
+verify that mount working
+
+```bash
+sudo umount /data
+sudo mount -a
+```
 
 ## Reference
 
