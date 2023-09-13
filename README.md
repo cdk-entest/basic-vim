@@ -291,6 +291,40 @@ or
 :g/<pattern>/d
 ```
 
+## OneDark Theme 
+
+First, install onedark theme using vimplug 
+
+```bash 
+" Using Vim-Plug
+Plug 'navarasu/onedark.nvim'
+```
+
+Update the ~/.vimrc 
+
+```txt
+let g:onedark_config = {
+  \ 'style': 'deep',
+  \ 'toggle_style_key': '<leader>ts',
+  \ 'ending_tildes': v:true,
+  \ 'diagnostics': {
+    \ 'darker': v:false,
+    \ 'background': v:false,
+  \ },
+\ }
+colorscheme onedark
+```
+
+Second copy the theme into vim manually 
+
+
+```bash 
+https://github.com/joshdick/onedark.vim
+copy -r onedark.vim/colors/ ~/.vim/colors/ 
+copy -r autoload/onedark.vim ~/.vim/autoload 
+```
+
+
 ## Reference
 
 - [amazon linux 2 repository](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/add-repositories.html)
@@ -298,3 +332,7 @@ or
 - [amazon linux 2023 repository](https://docs.aws.amazon.com/linux/al2023/release-notes/all-packages-AL2023.1-2023.1.20230719.html)
 
 - [netrw command](https://vonheikemen.github.io/devlog/tools/using-netrw-vim-builtin-file-explorer/)
+
+- [onedark theme](https://github.com/joshdick/onedark.vim)
+
+- [onedark theme](https://github.com/navarasu/onedark.nvim)
