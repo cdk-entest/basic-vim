@@ -210,12 +210,6 @@ and add to the coc-setting.json
 }
 ```
 
-## Captures
-
-Netrw and search files
-
-<img width="1435" alt="Screen Shot 2022-09-30 at 16 30 42" src="https://user-images.githubusercontent.com/20411077/193240365-9c905c4a-4c5d-4d5a-a011-ed63987a6a9c.png">
-
 ## Tmux
 
 hide and show status bar
