@@ -384,6 +384,31 @@ sudo umount /data
 sudo mount -a
 ```
 
+## Modify Volume
+
+- Grow parition  
+- Extend file system 
+
+First grow parition 
+
+```bash 
+sudo growpart /dev/nvme0n1 1
+```
+
+Then extend file system and the command depends on type of file system 
+
+```bash 
+sudo resize2fs /dev/nvme0n1p1
+```
+
+## Basic Command 
+
+For web development, we can run a webserver (nextjs) on ec2 and use portforwarding so local machine can access i 
+
+````bash 
+ssh -L 3000:localhost:3000 ec2-user@cloud9
+````
+
 ## Reference
 
 - [amazon linux 2 repository](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/add-repositories.html)
@@ -395,3 +420,5 @@ sudo mount -a
 - [onedark theme](https://github.com/joshdick/onedark.vim)
 
 - [onedark theme](https://github.com/navarasu/onedark.nvim)
+
+- [resize volumn and extend file system](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/recognize-expanded-volume-linux.html)
