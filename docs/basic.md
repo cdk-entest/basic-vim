@@ -1,6 +1,6 @@
 ---
 title: basic setup vimrc and onedark
-author: haimtran
+author: hai tran
 date: 02/11/2024
 ---
 
