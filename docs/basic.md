@@ -14,7 +14,7 @@ cd ~ && mkdir .vim && touch vimrc
 
 Let update its content. 
 
-```txt
+```vimrc
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
@@ -75,9 +75,9 @@ Let install onedark theme.
 
 ```bash
 cd ~
-https://github.com/joshdick/onedark.vim
+git clone https://github.com/joshdick/onedark.vim
 cp -r onedark.vim/colors/ ~/.vim/colors/
-cp -r autoload/onedark.vim ~/.vim/autoload
+cp -r onedark.vim/autoload/ ~/.vim/autoload/
 ```
 
 Let update vimrc with the newly installed onedark theme. 
